@@ -1,0 +1,83 @@
+#astro bot quiz
+#Sept 19th, 2024
+#this is a quiz to see what PSN charatcer you are
+
+
+#variables
+Astro = 0
+Sackboy = 0
+Kratos = 0
+Spiderman = 0
+answer = "placeholder"
+
+
+#question #1----------------------------------------------
+
+while answer != "Red" and answer != "Blue" and answer != "White" and answer != "Black":
+    answer = input("What is your favorite color? (Red, Blue, White, Black)")
+    if answer == "Red":
+        Spiderman += 1
+    elif answer == "Blue":
+        Astro += 1
+    elif answer == "White":
+        Kratos += 1
+    elif answer == "Black":
+        Sackboy += 1
+    else:
+        print ("Sorry that is NOT an option!")
+    
+#question #2-----------------------------------------------
+
+while answer != "No" and answer != "Spider" and answer != "Cat" and answer != "Dog":
+    answer = input("What is your favorite animal? (No, Spider, Cat, Dog)")
+    if answer == "No":
+        Kratos += 1
+    elif answer == "Spider":
+        Spiderman += 1
+    elif answer == "Cat":
+        Sackboy += 1
+    elif answer == "Dog":
+        Astro += 1
+    else:
+        print ("THAT ISNT AN OPTION!!!!!!!!")
+
+#question #3-------------------------------------------------
+        
+while answer != "Slick" and answer != "Angry" and answer != "Happy" and answer != "0_0":
+    answer = input("What is your personality? (Slick, Angry, Happy, 0_0)")
+    if answer == "Angry":
+        Kratos += 1
+    elif answer == "Slick":
+        Spiderman += 1
+    elif answer == "Happy":
+        Sackboy += 1
+    elif answer == "0_0":
+        Astro += 1
+    else:
+        print ("oh my days")
+        
+#question #4 (last question)-------------------------------------
+        
+while answer != "GodOfWar" and answer != "Spiderman" and answer != "Sackboy" and answer != "AstroBot":
+    answer = input("Whats your favorite Playstation exclusive? (AstroBot, GodOfWar, Spiderman, or Sackboy?)")
+    if answer == "GodOfWar":
+        Kratos += 1
+    elif answer == "Spiderman":
+        Spiderman += 1
+    elif answer == "Sackboy":
+        Sackboy += 1
+    elif answer == "AstroBot":
+        Astro += 1
+    else:
+        print ("THATS NOT ON THE LIST OH MY GOAWSBHDSGHLJFSGLFEHJLFHJLHFDJS")
+
+#game logic (astro, sack, kratos, spiderman)
+        
+if Astro >= Sackboy and Astro >= Kratos and Astro >= Spiderman:
+    print("Your are Astro!")
+elif Sackboy >= Kratos and Sackboy >= Spiderman:
+    print("You are Sackboy!")
+elif Kratos >= Spiderman:
+    print("Oh! You are Kratos!")
+else:
+    print("You are Spidey!")
